@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>오시는길</title>
+    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=2jw5y2ljo4"></script>
+    <link rel="stylesheet" type="text/css" href="wedding.css">
+  </head>
+  <body>
+    <div id="map" style="width:100%;height:400px;"></div>
+    <script>
+      var mapOptions = {
+          center: new naver.maps.LatLng(37.44614858074145, 127.05845571794698),
+          zoom: 17,
+          zoomControl: true,
+          };
+      var marker = {
+          position: new naver.maps.marker(37.44614858074145, 127.05845571794698),
+          map: map
+          };
+      var map = new naver.maps.Map('map', mapOptions);
+    </script>
+  </body>
+</html>
